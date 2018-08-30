@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]" parallel="tests">
+  <test name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.DealTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.DealTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest1">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest1 -->
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="doLoginTest" invocation-numbers="0 1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="Deal Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.DealTest">
+        <methods>
+          <include name="deleteDealAccountTest"/>
+          <include name="init"/>
+          <include name="createDealTest" invocation-numbers="0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.DealTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest1">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest1 -->
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Deal Test(failed) -->
+  <test name="Lead Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.DealTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.DealTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest1">
+        <methods>
+          <include name="deleteLeadAccountTest" invocation-numbers="0"/>
+          <include name="convertLeadTest" invocation-numbers="2 3 1 0"/>
+          <include name="init"/>
+          <include name="createLeadTest" invocation-numbers="1 2 3 0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest1 -->
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Lead Test(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->
